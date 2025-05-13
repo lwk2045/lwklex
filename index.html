@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>법무사 사무소</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-serif">
+    <!-- 상단 고정 헤더 -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-900">법무사 사무소</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors">소개</a>
+                    <a href="#practice" class="text-gray-600 hover:text-gray-900 transition-colors">전문분야</a>
+                    <a href="#cases" class="text-gray-600 hover:text-gray-900 transition-colors">주요사례</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors">상담문의</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="relative h-screen">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+        <div class="relative h-full flex items-center justify-center text-center text-white">
+            <div class="max-w-3xl px-6">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">법무사 사무소</h1>
+                <p class="text-xl md:text-2xl mb-8">전문성과 신뢰로 여러분의 권리를 보호합니다</p>
+                <a href="#contact" class="inline-block bg-white text-gray-900 px-8 py-3 rounded-sm hover:bg-gray-100 transition-colors">
+                    상담 신청하기
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 전문분야 섹션 -->
+    <section id="practice" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">전문분야</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="practice-card">
+                    <h3 class="text-xl font-semibold mb-4">부동산등기</h3>
+                    <p class="text-gray-600">부동산 소유권 이전, 저당권 설정 등 부동산 관련 등기 업무를 전문적으로 처리해드립니다.</p>
+                </div>
+                <div class="practice-card">
+                    <h3 class="text-xl font-semibold mb-4">상업등기</h3>
+                    <p class="text-gray-600">회사 설립, 변경등기, 합병, 분할 등 상업등기 관련 업무를 신속하게 처리해드립니다.</p>
+                </div>
+                <div class="practice-card">
+                    <h3 class="text-xl font-semibold mb-4">민사소송 및 집행</h3>
+                    <p class="text-gray-600">각종 민사소송 대리, 소장 작성, 증거 수집, 강제집행 등 소송 및 집행 관련 업무를 전문적으로 수행합니다.</p>
+                </div>
+                <div class="practice-card">
+                    <h3 class="text-xl font-semibold mb-4">형사</h3>
+                    <p class="text-gray-600">형사 변호, 보석 청구, 형사 합의 등 형사 사건에 대한 전문적인 법률 서비스를 제공합니다.</p>
+                </div>
+                <div class="practice-card">
+                    <h3 class="text-xl font-semibold mb-4">회생파산</h3>
+                    <p class="text-gray-600">개인회생, 파산절차 등 채무자 회생 관련 업무를 체계적으로 지원해드립니다.</p>
+                </div>
+                <div class="practice-card">
+                    <h3 class="text-xl font-semibold mb-4">상속이혼가사</h3>
+                    <p class="text-gray-600">상속, 이혼, 가사 관련 법률 문제를 전문적으로 해결해드립니다.</p>
+                </div>
+                <div class="practice-card">
+                    <h3 class="text-xl font-semibold mb-4">성년후견</h3>
+                    <p class="text-gray-600">성년후견인 선임, 후견사무 처리 등 성년후견 관련 업무를 지원해드립니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 주요사례 섹션 -->
+    <section id="cases" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">주요사례</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="case-card">
+                    <div class="bg-white p-8">
+                        <h3 class="text-xl font-semibold mb-4">대규모 부동산 등기 사건</h3>
+                        <p class="text-gray-600 mb-4">수백 건의 부동산 등기 업무를 신속하고 정확하게 처리하여 고객의 만족을 이끌어냈습니다.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">자세히 보기 →</a>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <div class="bg-white p-8">
+                        <h3 class="text-xl font-semibold mb-4">복잡한 상속 분쟁 해결</h3>
+                        <p class="text-gray-600 mb-4">다수의 상속인과 복잡한 상속 관계를 가진 사건을 성공적으로 해결했습니다.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">자세히 보기 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 상담문의 섹션 -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">상담문의</h2>
+            <div class="max-w-2xl mx-auto">
+                <form id="consultation-form" class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2">이름</label>
+                        <input type="text" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">연락처</label>
+                        <input type="tel" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">문의사항</label>
+                        <textarea name="message" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gray-900 text-white py-3 rounded-sm hover:bg-gray-800 transition-colors">
+                        상담 신청하기
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">법무사 사무소</h3>
+                    <p class="text-gray-400">서울특별시 강남구 테헤란로 123</p>
+                    <p class="text-gray-400">전화: 02-123-4567</p>
+                    <p class="text-gray-400">이메일: contact@lawfirm.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">영업시간</h3>
+                    <p class="text-gray-400">평일: 09:00 - 18:00</p>
+                    <p class="text-gray-400">토요일: 09:00 - 13:00</p>
+                    <p class="text-gray-400">일요일 및 공휴일: 휴무</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">바로가기</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white">소개</a></li>
+                        <li><a href="#practice" class="text-gray-400 hover:text-white">전문분야</a></li>
+                        <li><a href="#cases" class="text-gray-400 hover:text-white">주요사례</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">상담문의</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2024 법무사 사무소. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
